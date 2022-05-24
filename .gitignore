@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/model-hcm
+model-hcm.so
+model-hcm.dylib
+model-hcm.dll
+model-hcm.a
+model-hcm.lib
+model-hcm-test-*
+*.exe
+*.o
+*.obj
+*.lst
