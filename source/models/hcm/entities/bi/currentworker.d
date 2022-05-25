@@ -1,7 +1,7 @@
 module models.hcm.bi.currentworker;
 
 @safe:
-import models.projects;
+import models.hcm;
 
 class DHcmBICurrentWorkerEntity : DOOPEntity {
   mixin(EntityThis!("HcmBICurrentWorkerEntity"));
@@ -59,7 +59,7 @@ class DHcmBICurrentWorkerEntity : DOOPEntity {
         "employmentDetailValidToPrivate": StringAttribute, //
         "employmentDetailValidFromPrivate": StringAttribute, //
     ])
-    .registerPath("hcm_bi.currentworker");
+    .registerPath("hcm_bi.currentworkers");
   }
 }
 mixin(EntityCalls!("HcmBICurrentWorkerEntity"));
