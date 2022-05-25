@@ -11,15 +11,15 @@ class DHcmBIPerformanceEntity : DOOPEntity {
 
     this
       .addValues([
-        "Rating": StringAttribute, //
-        "RatingDescription": StringAttribute, //
-        "RatingModel": StringAttribute, //
-        "RatingModelDescription": StringAttribute, //
-        "Performance": StringAttribute, //
-        "PerformanceRatingValidFrom": StringAttribute, //
-        "PerformanceRatingValidTo": StringAttribute, //
-        "BackingTable_HRMCompPerfPlanEmplRelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "rating": StringAttribute, //
+        "ratingDescription": StringAttribute, //
+        "ratingModel": StringAttribute, //
+        "ratingModelDescription": StringAttribute, //
+        "performance": StringAttribute, //
+        "performanceRatingValidFrom": StringAttribute, //
+        "performanceRatingValidTo": StringAttribute, //
+        "backingTable_HRMCompPerfPlanEmplRelationshipId": StringAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
     ])
     .registerPath("hcm_bi.performance");
   }
