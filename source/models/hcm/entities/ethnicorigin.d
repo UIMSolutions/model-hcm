@@ -11,8 +11,8 @@ class DHcmEthnicOriginEntity : DOOPEntity {
 
     this
       .addValues([
-        "Description": StringAttribute, // 
-        "EthnicOriginId": StringAttribute, // 
+        "description": StringAttribute, // 
+        "ethnicOriginId": StringAttribute, // 
       ])
       .registerPath("hcm_ethnicorigins");
   }
