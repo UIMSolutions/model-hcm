@@ -1,4 +1,4 @@
-module models.hcm.compensations.performanceplan;
+module models.hcm.entities.compensations.performanceplan;
 
 @safe:
 import models.hcm;

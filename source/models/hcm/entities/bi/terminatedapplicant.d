@@ -1,4 +1,4 @@
-module models.hcm.bi.terminatedapplicant;
+module models.hcm.entities.bi.terminatedapplicant;
 
 @safe:
 import models.hcm;
@@ -54,6 +54,7 @@ version(test_model_hcm) {
   unittest {
     assert(HcmBITerminatedApplicantEntity);
   
-  auto entity = HcmBITerminatedApplicantEntity;
+    auto entity = HcmBITerminatedApplicantEntity;
+    // TODO more tests
   }
 }

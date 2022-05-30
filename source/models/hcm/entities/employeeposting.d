@@ -11,17 +11,17 @@ class DHcmEmployeePostingEntity : DOOPEntity {
 
     this
       .addValues([
-        "accountCode": StringATtribute, //
-        "dimensionHierarchy": StringATtribute, //
-        "num": StringATtribute, //
-        "summaryLedgerDimension": StringATtribute, //
-        "summaryLedgerDimensionDisplayValue": StringATtribute, //
-        "postingProfile": StringATtribute, //
-        "name": StringATtribute, //
-        "settlementByDimension": StringATtribute, //
-        "relationship_SummaryLedgerDimensionCombinationRelationshipId": StringATtribute, //
-        "backingTable_EmplLedgerAccounts_RURelationshipId": StringATtribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringATtribute, //
+        "accountCode": StringAttribute, //
+        "dimensionHierarchy": StringAttribute, //
+        "num": StringAttribute, //
+        "summaryLedgerDimension": StringAttribute, //
+        "summaryLedgerDimensionDisplayValue": StringAttribute, //
+        "postingProfile": StringAttribute, //
+        "name": StringAttribute, //
+        "settlementByDimension": StringAttribute, //
+        "relationship_SummaryLedgerDimensionCombinationRelationshipId": StringAttribute, //
+        "backingTable_EmplLedgerAccounts_RURelationshipId": StringAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
       ])
       .registerPath("hcm_employeepostings");
   }

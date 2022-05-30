@@ -1,4 +1,4 @@
-module models.hcm.compensations.payperformanceallocation;
+module models.hcm.entities.compensations.payperformanceallocation;
 
 @safe:
 import models.hcm;

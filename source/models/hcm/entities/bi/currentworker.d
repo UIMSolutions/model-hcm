@@ -1,4 +1,4 @@
-module models.hcm.bi.currentworker;
+module models.hcm.entities.bi.currentworker;
 
 @safe:
 import models.hcm;
@@ -68,6 +68,6 @@ version(test_model_hcm) {
   unittest {
     assert(HcmBICurrentWorkerEntity);
   
-  auto entity = HcmBICurrentWorkerEntity;
+    auto entity = HcmBICurrentWorkerEntity;
   }
 }

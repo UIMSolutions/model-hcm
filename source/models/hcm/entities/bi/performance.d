@@ -1,4 +1,4 @@
-module models.hcm.bi.performance;
+module models.hcm.entities.bi.performance;
 
 @safe:
 import models.hcm;

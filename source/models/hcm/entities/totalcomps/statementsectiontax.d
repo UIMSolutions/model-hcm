@@ -23,7 +23,8 @@ class DHcmTotalCompStatementSectionTaxEntity : DOOPEntity {
         "taxGroupId": StringAttribute, //
         "nullableTaxGroupId": StringAttribute, //
         "relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": StringAttribute, //
-        "backingTable_HcmTotalCompStatementSectionTaxRelationshipId": StringAttribute, //      ])
+        "backingTable_HcmTotalCompStatementSectionTaxRelationshipId": StringAttribute, //      
+      ])
       .registerPath("hcm_totalcomps.statementsectiontax");
   }
 }

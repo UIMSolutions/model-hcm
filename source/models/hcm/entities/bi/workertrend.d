@@ -1,4 +1,4 @@
-module models.hcm.bi.workertrend;
+module models.hcm.entities.bi.workertrend;
 
 @safe:
 import models.hcm;

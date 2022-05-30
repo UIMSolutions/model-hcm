@@ -22,7 +22,8 @@ class DHcmPositionHierarchyEntity : DOOPEntity {
         "hierarchyTypeName": StringAttribute, //
         "relationship_PositionRelationshipId": StringAttribute, //
         "relationship_ParentPositionRelationshipId": StringAttribute, //
-        "relationship_PositionHierarchyTypeRelationshipId": StringAttribute, //      ])
+        "relationship_PositionHierarchyTypeRelationshipId": StringAttribute, //      
+      ])
       .registerPath("hcm_employment.hierarchies");
   }
 }

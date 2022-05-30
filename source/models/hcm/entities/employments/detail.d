@@ -1,4 +1,4 @@
-module models.hcm.employments.detail;
+module models.hcm.entities.employments.detail;
 
 @safe:
 import models.hcm;

@@ -1,4 +1,4 @@
-module models.hcm.entities.workers.group;
+module models.hcm.entities.workers.summary;
 
 @safe:
 import models.hcm;

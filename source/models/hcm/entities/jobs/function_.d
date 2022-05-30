@@ -1,4 +1,4 @@
-module models.hcm.entities.jobs.function;
+module models.hcm.entities.jobs.function_;
 
 @safe:
 import models.hcm;

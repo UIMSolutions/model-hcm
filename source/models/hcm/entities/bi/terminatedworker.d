@@ -1,4 +1,4 @@
-module models.hcm.bi.terminatedworker;
+module models.hcm.entities.bi.terminatedworker;
 
 @safe:
 import models.hcm;
@@ -44,6 +44,6 @@ version(test_model_hcm) {
   unittest {
     assert(HcmBIPerformanceEntity);
   
-  auto entity = HcmBIPerformanceEntity;
+    auto entity = HcmBIPerformanceEntity;
   }
 }

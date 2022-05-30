@@ -1,1 +1,1 @@
-module models.hcm.attribtes;
+module models.hcm.attributes;

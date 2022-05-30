@@ -11,20 +11,20 @@ class DHcmWorkerContactEntity : DOOPEntity {
 
     this
       .addValues([
-        "personnelNumber": StringAttribute
-        "type": StringAttribute
-        "locator": StringAttribute
-        "description": StringAttribute
-        "purpose": StringAttribute
-        "locatorExtension": StringAttribute
-        "countryRegionCode": StringAttribute
-        "isPrimary": StringAttribute
-        "isMobilePhone": StringAttribute
-        "isPrivate": StringAttribute
-        "locationId": StringAttribute
-        "partyNumber": StringAttribute
-        "relationship_HcmWorkerRelationshipId": StringAttribute
-        "backingTable_DirPartyContactEntityRelationshipId": StringAttribute
+        "personnelNumber": StringAttribute,
+        "type": StringAttribute,
+        "locator": StringAttribute,
+        "description": StringAttribute,
+        "purpose": StringAttribute,
+        "locatorExtension": StringAttribute,
+        "countryRegionCode": StringAttribute,
+        "isPrimary": StringAttribute,
+        "isMobilePhone": StringAttribute,
+        "isPrivate": StringAttribute,
+        "locationId": StringAttribute,
+        "partyNumber": StringAttribute,
+        "relationship_HcmWorkerRelationshipId": StringAttribute,
+        "backingTable_DirPartyContactEntityRelationshipId": StringAttribute,
       ])
       .registerPath("hcm_workers.contacts");
   }
