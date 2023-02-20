@@ -7,15 +7,15 @@ class DHcmTotalCompStatementSectionBenefitEntity : DOOPEntity {
   mixin(EntityThis!("HcmTotalCompStatementSectionBenefitEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "benefit": StringAttribute, //
         "statementSection": StringAttribute, //
-        "benefitId": StringAttribute, //
-        "statementSectionId": StringAttribute, //
-        "relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": StringAttribute, //
+        "benefitId": UUIDAttribute, //
+        "statementSectionId": UUIDAttribute, //
+        "relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_totalcomps.statementsectionbenefits");
   }

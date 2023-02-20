@@ -7,7 +7,7 @@ class DHcmSigningLimitAgreementEntity : DOOPEntity {
   mixin(EntityThis!("HcmSigningLimitAgreementEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,7 +7,7 @@ class DHcmTotalCompStatementSectionEarningEntity : DOOPEntity {
   mixin(EntityThis!("HcmTotalCompStatementSectionEarningEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,13 +15,13 @@ class DHcmTotalCompStatementSectionEarningEntity : DOOPEntity {
         "EarningCodeOrGroupType": StringAttribute, //
         "EarningCodeGroup": StringAttribute, //
         "TotalCompensationStatementSection": StringAttribute, //
-        "StatementSectionId": StringAttribute, //
-        "EarningCodeId": StringAttribute, //
-        "NullableEarningCodeId": StringAttribute, //
-        "EarningCodeGroupId": StringAttribute, //
-        "NullableEarningCodeGroupId": StringAttribute, //
-        "Relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": StringAttribute, //
-        "Relationship_PayrollEarningCodeGroupEntityRelationshipId": StringAttribute, //
+        "StatementSectionId": UUIDAttribute, //
+        "EarningCodeId": UUIDAttribute, //
+        "NullableEarningCodeId": UUIDAttribute, //
+        "EarningCodeGroupId": UUIDAttribute, //
+        "NullableEarningCodeGroupId": UUIDAttribute, //
+        "Relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": UUIDAttribute, //
+        "Relationship_PayrollEarningCodeGroupEntityRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_totalcomps.statementsectionearning");
   }

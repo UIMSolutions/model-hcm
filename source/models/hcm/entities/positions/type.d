@@ -7,13 +7,13 @@ class DHcmPositionTypeEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionTypeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, //
         "classification": StringAttribute, //
-        "positionTypeId": StringAttribute, //
+        "positionTypeId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.types");
   }

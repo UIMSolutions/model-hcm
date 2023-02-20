@@ -7,7 +7,7 @@ class DHcmSigningLimitRevocationReasonCodeEntity : DOOPEntity {
   mixin(EntityThis!("HcmSigningLimitRevocationReasonCodeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,21 +7,21 @@ class DHcmPositionWorkerAssignmentEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionWorkerAssignmentEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "position": StringAttribute, //
-        "positionId": StringAttribute, //
+        "positionId": UUIDAttribute, //
         "personnelNumber": StringAttribute, //
         "reasonCode": StringAttribute, //
-        "reasonCodeId": StringAttribute, //
+        "reasonCodeId": UUIDAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
         "worker": StringAttribute, //
         "isPrimaryPosition": StringAttribute, //
-        "relationship_PositionRelationshipId": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
+        "relationship_PositionRelationshipId": UUIDAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.workerassignments");
   }

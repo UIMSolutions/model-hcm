@@ -7,11 +7,11 @@ class DHcmPositionEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "positionId": StringAttribute, //
+        "positionId": UUIDAttribute, //
         "availableForAssignment": StringAttribute, //
         "compensationRegion": StringAttribute, //
         "department": StringAttribute, //
@@ -23,10 +23,10 @@ class DHcmPositionEntity : DOOPEntity {
         "detailEffective": StringAttribute, //
         "detailExpiration": StringAttribute, //
         "departmentNumber": StringAttribute, //
-        "compensationRegionId": StringAttribute, //
-        "jobId": StringAttribute, //
-        "positionTypeId": StringAttribute, //
-        "titleId": StringAttribute, //
+        "compensationRegionId": UUIDAttribute, //
+        "jobId": UUIDAttribute, //
+        "positionTypeId": UUIDAttribute, //
+        "titleId": UUIDAttribute, //
         "activation": StringAttribute, //
         "retirement": StringAttribute, //
         "workerAssignmentReasonCode": StringAttribute, //
@@ -34,31 +34,31 @@ class DHcmPositionEntity : DOOPEntity {
         "workerAssignmentEnd": StringAttribute, //
         "worker": StringAttribute, //
         "workerPersonnelNumber": StringAttribute, //
-        "workerAssignmentReasonCodeId": StringAttribute, //
+        "workerAssignmentReasonCodeId": UUIDAttribute, //
         "workerName": StringAttribute, //
         "legalEntity": StringAttribute, //
         "paidByLegalEntity": StringAttribute, //
         "payCycle": StringAttribute, //
-        "payCycleId": StringAttribute, //
+        "payCycleId": UUIDAttribute, //
         "annualRegularHours": StringAttribute, //
         "payrollDetailEffective": StringAttribute, //
         "payrollDetailExpiration": StringAttribute, //
         "isSalaryGenerated": StringAttribute, //
-        "defaultEarningCodeId": StringAttribute, //
+        "defaultEarningCodeId": UUIDAttribute, //
         "insuranceBenefit": StringAttribute, //
         "areEarningsGeneratedFromSchedule": StringAttribute, //
         "paidBy": StringAttribute, //
         "payPeriodOvertimeHours": StringAttribute, //
         "schedule": StringAttribute, //
         "scheduleLegalEntity": StringAttribute, //
-        "benefitId": StringAttribute, //
-        "relationship_JobRelationshipId": StringAttribute, //
-        "relationship_TitleRelationshipId": StringAttribute, //
-        "relationship_PositionTypeRelationshipId": StringAttribute, //
-        "relationship_DepartmentRelationshipId": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
-        "relationship_PayrollPayCycleRelationshipId": StringAttribute, //
-        "relationship_WorkCalendarRelationshipId": StringAttribute, //
+        "benefitId": UUIDAttribute, //
+        "relationship_JobRelationshipId": UUIDAttribute, //
+        "relationship_TitleRelationshipId": UUIDAttribute, //
+        "relationship_PositionTypeRelationshipId": UUIDAttribute, //
+        "relationship_DepartmentRelationshipId": UUIDAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
+        "relationship_PayrollPayCycleRelationshipId": UUIDAttribute, //
+        "relationship_WorkCalendarRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.positions");
   }

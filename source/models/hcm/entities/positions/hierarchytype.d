@@ -7,7 +7,7 @@ class DHcmPositionHierarchyTypeEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionHierarchyTypeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
