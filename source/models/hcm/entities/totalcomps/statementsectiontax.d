@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmTotalCompStatementSectionTaxEntity : DOOPEntity {
   mixin(EntityThis!("HcmTotalCompStatementSectionTaxEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
