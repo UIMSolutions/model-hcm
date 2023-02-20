@@ -7,7 +7,7 @@ class DPayrollBankAccountDisbursementEntity : DOOPEntity {
   mixin(EntityThis!("PayrollBankAccountDisbursementEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -17,12 +17,12 @@ class DPayrollBankAccountDisbursementEntity : DOOPEntity {
         "lineNumber": StringAttribute, //
         "accountIdentification": StringAttribute, //
         "company": StringAttribute, //
-        "accountIdentificationId": StringAttribute, //
+        "accountIdentificationId": UUIDAttribute, //
         "worker": StringAttribute, //
         "personnelNumber": StringAttribute, //
         "inPrenoteStatus": StringAttribute, //
-        "relationship_WorkerBankAccountRelationshipId": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, ///PayrollBankAccountDisbursementEntity
+        "relationship_WorkerBankAccountRelationshipId": UUIDAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, ///PayrollBankAccountDisbursementEntity
       ])
       .registerPath("hcm_payrolls.bankaccountdisbursement");
   }

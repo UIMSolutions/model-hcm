@@ -7,17 +7,17 @@ class DHcmLaborUnionAgreementEntity : DOOPEntity {
   mixin(EntityThis!("HcmLaborUnionAgreementEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "agreementName": StringAttribute, //
         "description": StringAttribute, //
         "laborUnion": StringAttribute, //
-        "unionId": StringAttribute, //
+        "unionId": UUIDAttribute, //
         "legalEntity": StringAttribute, //
-        "legalEntityId": StringAttribute, //
-        "relationship_LaborUnionRelationshipId": StringAttribute, //
+        "legalEntityId": UUIDAttribute, //
+        "relationship_LaborUnionRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_applicantprojectroles");
   }

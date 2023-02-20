@@ -7,13 +7,13 @@ class DHcmJobTypeEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobTypeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, //
         "exemptStatus": StringAttribute, //
-        "jobTypeId": StringAttribute, //
+        "jobTypeId": UUIDAttribute, //
         "paidHourly": StringAttribute, //
       ])
       .registerPath("hcm_jobs.types");

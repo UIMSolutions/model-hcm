@@ -7,16 +7,16 @@ class DHcmJobPreferredEducationDisciplineEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobPreferredEducationDisciplineEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "education": StringAttribute, //
-        "educationId": StringAttribute, //
+        "educationId": UUIDAttribute, //
         "importance": StringAttribute, //
         "job": StringAttribute, //
-        "jobId": StringAttribute, //
-        "relationship_JobRelationshipId": StringAttribute, //
+        "jobId": UUIDAttribute, //
+        "relationship_JobRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_jobs.preferrededucationdisciplines");
   }

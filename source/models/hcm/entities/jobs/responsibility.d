@@ -7,16 +7,16 @@ class DHcmJobResponsibilityEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobResponsibilityEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "job": StringAttribute, // 
-        "jobId": StringAttribute, // 
+        "jobId": UUIDAttribute, // 
         "note": StringAttribute, // 
         "areaOfResponsibility": StringAttribute, // 
-        "areaOfResponsibilityId": StringAttribute, // 
-        "relationship_JobRelationshipId": StringAttribute, // 
+        "areaOfResponsibilityId": UUIDAttribute, // 
+        "relationship_JobRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("hcm_jobs.responsibilities");
   }
