@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmCompensationPerformancePlanEntity : DOOPEntity {
   mixin(EntityThis!("HcmCompensationPerformancePlanEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

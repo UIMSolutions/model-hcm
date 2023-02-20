@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmEmploymentContractorEntity : DOOPEntity {
   mixin(EntityThis!("HcmEmploymentContractorEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
