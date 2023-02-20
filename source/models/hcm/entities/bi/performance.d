@@ -7,7 +7,7 @@ class DHcmBIPerformanceEntity : DOOPEntity {
   mixin(EntityThis!("HcmBIPerformanceEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -18,8 +18,8 @@ class DHcmBIPerformanceEntity : DOOPEntity {
         "performance": StringAttribute, //
         "performanceRatingValidFrom": StringAttribute, //
         "performanceRatingValidTo": StringAttribute, //
-        "backingTable_HRMCompPerfPlanEmplRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_HRMCompPerfPlanEmplRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_bi.performance");
   }

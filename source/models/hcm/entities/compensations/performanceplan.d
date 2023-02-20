@@ -7,7 +7,7 @@ class DHcmCompensationPerformancePlanEntity : DOOPEntity {
   mixin(EntityThis!("HcmCompensationPerformancePlanEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,8 +15,8 @@ class DHcmCompensationPerformancePlanEntity : DOOPEntity {
         "Plan": StringAttribute, //
         "Effective": StringAttribute, //
         "Expiration": StringAttribute, //
-        "BackingTable_HRMCompPerfPlanRelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "BackingTable_HRMCompPerfPlanRelationshipId": UUIDAttribute, //
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_compensations.performanceplans");
   }

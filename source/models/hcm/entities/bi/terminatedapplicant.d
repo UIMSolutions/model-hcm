@@ -7,7 +7,7 @@ class DHcmBITerminatedApplicantEntity : DOOPEntity {
   mixin(EntityThis!("HcmBITerminatedApplicantEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -43,7 +43,7 @@ class DHcmBITerminatedApplicantEntity : DOOPEntity {
         "personDetailsValidTo": StringAttribute, //
         "employmentDetailValidFrom": StringAttribute, //
         "employmentDetailValidTo": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_bi.terminatedapplicants");
   }

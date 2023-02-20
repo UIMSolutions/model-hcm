@@ -7,7 +7,7 @@ class DHcmBIPerformanceEntity : DOOPEntity {
   mixin(EntityThis!("HcmBIPerformanceEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

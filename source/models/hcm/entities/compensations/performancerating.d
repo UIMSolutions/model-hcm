@@ -7,7 +7,7 @@ class DHcmCompensationPerformanceRatingEntity : DOOPEntity {
   mixin(EntityThis!("HcmCompensationPerformanceRatingEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,8 +15,8 @@ class DHcmCompensationPerformanceRatingEntity : DOOPEntity {
         "rating": StringAttribute, //
         "effective": StringAttribute, //
         "expiration": StringAttribute, //
-        "backingTable_HRMCompPerfRatingRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_HRMCompPerfRatingRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_compensations.performanceratings");
   }

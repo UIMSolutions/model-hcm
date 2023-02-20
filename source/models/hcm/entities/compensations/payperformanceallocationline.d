@@ -7,23 +7,23 @@ class DHcmCompensationPayPerformanceAllocationLineEntity : DOOPEntity {
   mixin(EntityThis!("HcmCompensationPayPerformanceAllocationLineEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "allocationId": StringAttribute, //
-        "compPerfRatingId": StringAttribute, //
+        "allocationId": UUIDAttribute, //
+        "compPerfRatingId": UUIDAttribute, //
         "perfFactorPercent": StringAttribute, //
         "planType": StringAttribute, //
         "ratingLevel": StringAttribute, //
-        "ratingLevelId": StringAttribute, //
+        "ratingLevelId": UUIDAttribute, //
         "ratingModel": StringAttribute, //
-        "ratingModelId": StringAttribute, //
+        "ratingModelId": UUIDAttribute, //
         "ratingModelType": StringAttribute, //
-        "relationship_HRMCompPerfAllocationRelationshipId": StringAttribute, //
-        "relationship_HRMCompPerfRatingRelationshipId": StringAttribute, //
-        "backingTable_HRMCompPerfAllocationLineRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_HRMCompPerfAllocationRelationshipId": UUIDAttribute, //
+        "relationship_HRMCompPerfRatingRelationshipId": UUIDAttribute, //
+        "backingTable_HRMCompPerfAllocationLineRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_compensations.payperformanceallocationlines");
   }

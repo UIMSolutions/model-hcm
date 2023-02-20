@@ -7,7 +7,7 @@ class DHcmBudgetCostElementEntity : DOOPEntity {
   mixin(EntityThis!("HcmBudgetCostElementEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -20,11 +20,11 @@ class DHcmBudgetCostElementEntity : DOOPEntity {
         "expirationDate": StringAttribute, //
         "annualLimit": StringAttribute, //
         "amount": StringAttribute, //
-        "costElementDataAreaId": StringAttribute, //
+        "costElementDataAreaId": UUIDAttribute, //
         "costElementLedgerDimensionDisplayValue": StringAttribute, //
         "costElementLedgerDimension": StringAttribute, //
         "costElementName": StringAttribute, //
-        "backingTable_HcmBudgetPurposeTypeRelationshipId": StringAttribute, //
+        "backingTable_HcmBudgetPurposeTypeRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_budgetcostelements");
   }

@@ -7,7 +7,7 @@ class DHcmBIEmployedApplicantEntity : DOOPEntity {
   mixin(EntityThis!("HcmBIEmployedApplicantEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -55,7 +55,7 @@ class DHcmBIEmployedApplicantEntity : DOOPEntity {
         "jobDetailValidToPrivate": StringAttribute, //
         "employmentDetailValidFromPrivate": StringAttribute, //
         "employmentDetailValidToPrivate": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, ///HcmBIEmployedApplicantEntity
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, ///HcmBIEmployedApplicantEntity
     ])
     .registerPath("hcm_bi.employedapplicants");
   }
