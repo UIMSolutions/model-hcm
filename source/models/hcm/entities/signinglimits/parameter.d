@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmSignLimitParametersEntity : DOOPEntity {
   mixin(EntityThis!("HcmSignLimitParametersEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
