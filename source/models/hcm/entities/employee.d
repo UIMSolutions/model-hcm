@@ -7,7 +7,7 @@ class DHcmEmployeeEntity : DOOPEntity {
   mixin(EntityThis!("HcmEmployeeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,7 +15,7 @@ class DHcmEmployeeEntity : DOOPEntity {
         "person": StringAttribute, //
         "partyNumber": StringAttribute, //
         "knownAs": StringAttribute, //
-        "languageId": StringAttribute, //
+        "languageId": UUIDAttribute, //
         "name": StringAttribute, //
         "nameAlias": StringAttribute, //
         "phoneticFirstName": StringAttribute, //
@@ -59,12 +59,12 @@ class DHcmEmployeeEntity : DOOPEntity {
         "personalTitle": StringAttribute, //
         "personalSuffix": StringAttribute, //
         "title": StringAttribute, //
-        "titleId": StringAttribute, //
+        "titleId": UUIDAttribute, //
         "originalHireDateTime": StringAttribute, //
         "seniorityDate": StringAttribute, //
         "anniversaryDateTime": StringAttribute, //
         "officeLocation": StringAttribute, //
-        "officeLocationId": StringAttribute, //
+        "officeLocationId": UUIDAttribute, //
         "summaryValidFrom": StringAttribute, //
         "summaryValidTo": StringAttribute, //
         "birthDate": StringAttribute, //
@@ -74,14 +74,14 @@ class DHcmEmployeeEntity : DOOPEntity {
         "disabledVerificationDate": StringAttribute, //
         "education": StringAttribute, //
         "ethnicOrigin": StringAttribute, //
-        "ethnicOriginId": StringAttribute, //
+        "ethnicOriginId": UUIDAttribute, //
         "fatherBirthCountryRegion": StringAttribute, //
         "gender": StringAttribute, //
         "isDisabled": StringAttribute, //
         "isFulltimeStudent": StringAttribute, //
         "motherBirthCountryRegion": StringAttribute, //
         "nativeLanguage": StringAttribute, //
-        "nativeLanguageId": StringAttribute, //
+        "nativeLanguageId": UUIDAttribute, //
         "personBirthCountryRegion": StringAttribute, //
         "personBirthCity": StringAttribute, //
         "isDisabledVeteran": StringAttribute, //
@@ -93,16 +93,16 @@ class DHcmEmployeeEntity : DOOPEntity {
         "militaryServiceStartDate": StringAttribute, //
         "militaryServiceEndDate": StringAttribute, //
         "veteranStatus": StringAttribute, //
-        "veteranStatusId": StringAttribute, //
+        "veteranStatusId": UUIDAttribute, //
         "personDetailsValidFrom": StringAttribute, //
         "personDetailsValidTo": StringAttribute, //
         "addressBooks": StringAttribute, //
         "addressCity": StringAttribute, //
-        "addressCountryRegionId": StringAttribute, //
+        "addressCountryRegionId": UUIDAttribute, //
         "addressCountryRegionISOCode": StringAttribute, //
         "addressCounty": StringAttribute, //
         "addressDistrictName": StringAttribute, //
-        "addressLocationId": StringAttribute, //
+        "addressLocationId": UUIDAttribute, //
         "addressLocationRoles": StringAttribute, //
         "addressNameDescription": StringAttribute, //
         "addressState": StringAttribute, //
@@ -121,14 +121,14 @@ class DHcmEmployeeEntity : DOOPEntity {
         "employmentStartDate": StringAttribute, //
         "employmentEndDate": StringAttribute, //
         "employmentLegalEntity": StringAttribute, //
-        "employmentLegalEntityId": StringAttribute, //
+        "employmentLegalEntityId": UUIDAttribute, //
         "regulatoryEstablishment": StringAttribute, //
-        "regulatoryEstablishmentId": StringAttribute, //
+        "regulatoryEstablishmentId": UUIDAttribute, //
         "startDate": StringAttribute, //
         "adjustedWorkerStartDate": StringAttribute, //
         "lastDateWorked": StringAttribute, //
         "terminationReason": StringAttribute, //
-        "terminationReasonCodeId": StringAttribute, //
+        "terminationReasonCodeId": UUIDAttribute, //
         "terminationDate": StringAttribute, //
         "employmentNoticeEmployerQuantity": StringAttribute, //
         "employmentNoticeEmployerUnit": StringAttribute, //
@@ -144,17 +144,17 @@ class DHcmEmployeeEntity : DOOPEntity {
         "employeeDetailsExpiration": StringAttribute, //
         "dimension": StringAttribute, //
         "dimensionDisplayValue": StringAttribute, //
-        "electronicLocationId": StringAttribute, //
+        "electronicLocationId": UUIDAttribute, //
         "allowRehire": StringAttribute, //
         "worksFromHome": StringAttribute, //
-        "calendarId": StringAttribute, //
-        "calendarDataAreaId": StringAttribute, //
-        "relationship_TitleRelationshipId": StringAttribute, //
-        "relationship_LanguageRelationshipId": StringAttribute, //
-        "relationship_PersonRelationshipId": StringAttribute, //
-        "relationship_EthnicOriginRelationshipId": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
-        "relationship_WorkCalendarRelationshipId": StringAttribute, //
+        "calendarId": UUIDAttribute, //
+        "calendarDataAreaId": UUIDAttribute, //
+        "relationship_TitleRelationshipId": UUIDAttribute, //
+        "relationship_LanguageRelationshipId": UUIDAttribute, //
+        "relationship_PersonRelationshipId": UUIDAttribute, //
+        "relationship_EthnicOriginRelationshipId": UUIDAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
+        "relationship_WorkCalendarRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employees");
   }

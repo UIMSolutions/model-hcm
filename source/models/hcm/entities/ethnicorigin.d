@@ -7,12 +7,12 @@ class DHcmEthnicOriginEntity : DOOPEntity {
   mixin(EntityThis!("HcmEthnicOriginEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, // 
-        "ethnicOriginId": StringAttribute, // 
+        "ethnicOriginId": UUIDAttribute, // 
       ])
       .registerPath("hcm_ethnicorigins");
   }

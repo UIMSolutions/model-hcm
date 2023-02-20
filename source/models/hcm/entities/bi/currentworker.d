@@ -7,7 +7,7 @@ class DHcmBICurrentWorkerEntity : DOOPEntity {
   mixin(EntityThis!("HcmBICurrentWorkerEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

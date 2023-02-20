@@ -7,12 +7,12 @@ class DHcmLanguageCodeEntity : DOOPEntity {
   mixin(EntityThis!("HcmLanguageCodeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, //
-        "languageCodeId": StringAttribute, //
+        "languageCodeId": UUIDAttribute, //
       ])
       .registerPath("hcm_languagecodes");
   }

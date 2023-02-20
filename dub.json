@@ -1,6 +1,6 @@
 {
 	"authors": [
-		"UI Manufaktur UG"
+		"Ozan Nurettin Süel (Sicherheitsschmiede)"
 	],
 	"configurations": [
 		{
@@ -31,7 +31,7 @@
 		"../../LIBS/uim-entitybase",
 		"./"
 	],
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"name": "model-hcm",
 	"sourcePaths": [
 		"../../LIBS/uim-core",

@@ -7,20 +7,20 @@ class DKMAnswersByPersonEntity : DOOPEntity {
   mixin(EntityThis!("KMAnswersByPersonEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "partyNumber": StringAttribute, //
-        "collectionId": StringAttribute, //
+        "collectionId": UUIDAttribute, //
         "status": StringAttribute, //
-        "questionId": StringAttribute, //
+        "questionId": UUIDAttribute, //
         "questionText": StringAttribute, //
         "answerText": StringAttribute, //
         "comment": StringAttribute, //
-        "answerId": StringAttribute, //
-        "relationship_PersonRelationshipId": StringAttribute, //
-        "backingTable_DirPersonRelationshipId": StringAttribute, //
+        "answerId": UUIDAttribute, //
+        "relationship_PersonRelationshipId": UUIDAttribute, //
+        "backingTable_DirPersonRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_kmanswersbypersons");
   }

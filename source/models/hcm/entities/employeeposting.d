@@ -7,7 +7,7 @@ class DHcmEmployeePostingEntity : DOOPEntity {
   mixin(EntityThis!("HcmEmployeePostingEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -19,9 +19,9 @@ class DHcmEmployeePostingEntity : DOOPEntity {
         "postingProfile": StringAttribute, //
         "name": StringAttribute, //
         "settlementByDimension": StringAttribute, //
-        "relationship_SummaryLedgerDimensionCombinationRelationshipId": StringAttribute, //
-        "backingTable_EmplLedgerAccounts_RURelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_SummaryLedgerDimensionCombinationRelationshipId": UUIDAttribute, //
+        "backingTable_EmplLedgerAccounts_RURelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employeepostings");
   }

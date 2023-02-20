@@ -7,11 +7,11 @@ class DHcmTitleEntity : DOOPEntity {
   mixin(EntityThis!("HcmTitleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "TitleId": StringAttribute, // 
+        "TitleId": UUIDAttribute, // 
       ])
       .registerPath("hcm_titles");
   }
