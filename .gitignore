@@ -13,3 +13,5 @@ model-hcm-test-*
 *.o
 *.obj
 *.lst
+dub.selections.json
+libmodel-hcm.a
