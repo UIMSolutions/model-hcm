@@ -6,7 +6,7 @@ import models.hcm;
 class DPayrollPayPeriodEntity : DOOPEntity {
   mixin(EntityThis!("PayrollPayPeriodEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

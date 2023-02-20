@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmPositionHierarchyEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionHierarchyEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
