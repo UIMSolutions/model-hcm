@@ -7,7 +7,7 @@ class DHcmWorkerBankAccountEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerBankAccountEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -28,9 +28,9 @@ class DHcmWorkerBankAccountEntity : DOOPEntity {
         "internetAddress": StringAttribute, //
         "worker": StringAttribute, //
         "personnelNumber": StringAttribute, //
-        "addressLocationId": StringAttribute, //
+        "addressLocationId": UUIDAttribute, //
         "addressDescription": StringAttribute, //
-        "addressCountryRegionId": StringAttribute, //
+        "addressCountryRegionId": UUIDAttribute, //
         "addressCountryRegionISOCode": StringAttribute, //
         "addressZipCode": StringAttribute, //
         "addressStreet": StringAttribute, //
@@ -49,7 +49,7 @@ class DHcmWorkerBankAccountEntity : DOOPEntity {
         "branchName": StringAttribute, //
         "accountHolder": StringAttribute, //
         "bankLocationCode": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_workers.bankaccounts");
   }

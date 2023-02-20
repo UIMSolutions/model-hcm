@@ -7,11 +7,11 @@ class DHcmTotalCompStatementSectionHeaderEntity : DOOPEntity {
   mixin(EntityThis!("HcmTotalCompStatementSectionHeaderEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "StatementSectionId": StringAttribute, //
+        "StatementSectionId": UUIDAttribute, //
         "StatementSectionName": StringAttribute, //
       ])
       .registerPath("hcm_totalcomps.statementsectionheaders");

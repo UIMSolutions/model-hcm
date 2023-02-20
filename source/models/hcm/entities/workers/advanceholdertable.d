@@ -7,23 +7,23 @@ class DHcmWorkerEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "company": StringAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
-        "employeeId": StringAttribute, //
+        "employeeId": UUIDAttribute, //
         "personnelNumber": StringAttribute, //
         "name": StringAttribute, //
         "advanceHolder": StringAttribute, //
         "hcmEmployment": StringAttribute, //
-        "workTypeId": StringAttribute, //
+        "workTypeId": UUIDAttribute, //
         "legalEntity": StringAttribute, //
         "Worker": StringAttribute, //
         "partyNumber": StringAttribute, //
-        "backingTable_EmployeeTable_RURelationshipId": StringAttribute, //
+        "backingTable_EmployeeTable_RURelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_workers.advanceholdertables");
   }

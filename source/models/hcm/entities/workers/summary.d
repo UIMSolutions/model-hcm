@@ -7,7 +7,7 @@ class DHcmWorkerSummaryEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerSummaryEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -19,12 +19,12 @@ class DHcmWorkerSummaryEntity : DOOPEntity {
         "title": StringAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
-        "titleId": StringAttribute, //
+        "titleId": UUIDAttribute, //
         "personnelNumber": StringAttribute, //
-        "buildingAddressId": StringAttribute, //
+        "buildingAddressId": UUIDAttribute, //
         "worksFromHome": StringAttribute, //
-        "relationship_TitleRelationshipId": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
+        "relationship_TitleRelationshipId": UUIDAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_workers.summary");
   }

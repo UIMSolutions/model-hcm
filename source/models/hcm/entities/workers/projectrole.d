@@ -7,19 +7,19 @@ class DHcmWorkerProjectRoleEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerProjectRoleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "dataArea": StringAttribute, //
         "endDate": StringAttribute, //
-        "projectId": StringAttribute, //
+        "projectId": UUIDAttribute, //
         "projectName": StringAttribute, //
         "role": StringAttribute, //
         "startDate": StringAttribute, //
         "personnelNumber": StringAttribute, //
-        "backingTable_HcmPersonProjectRoleEntityRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_HcmPersonProjectRoleEntityRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_workers.projectroles");
   }

@@ -7,7 +7,7 @@ class DHcmWorkerBaseEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerBaseEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,7 +15,7 @@ class DHcmWorkerBaseEntity : DOOPEntity {
         "person": StringAttribute, //
         "partyNumber": StringAttribute, //
         "KnownAs": StringAttribute, //
-        "LanguageId": StringAttribute, //
+        "LanguageId": UUIDAttribute, //
         "name": StringAttribute, //
         "nameAlias": StringAttribute, //
         "phoneticFirstName": StringAttribute, //
@@ -32,14 +32,14 @@ class DHcmWorkerBaseEntity : DOOPEntity {
         "disabledVerificationDate": StringAttribute, //
         "education": StringAttribute, //
         "ethnicOrigin": StringAttribute, //
-        "ethnicOriginId": StringAttribute, //
+        "ethnicOriginId": UUIDAttribute, //
         "fatherBirthCountryRegion": StringAttribute, //
         "gender": StringAttribute, //
         "isDisabled": StringAttribute, //
         "isFulltimeStudent": StringAttribute, //
         "motherBirthCountryRegion": StringAttribute, //
         "nativeLanguage": StringAttribute, //
-        "nativeLanguageId": StringAttribute, //
+        "nativeLanguageId": UUIDAttribute, //
         "personBirthCountryRegion": StringAttribute, //
         "personBirthCity": StringAttribute, //
         "firstName": StringAttribute, //
@@ -50,11 +50,11 @@ class DHcmWorkerBaseEntity : DOOPEntity {
         "nameValidTo": StringAttribute, //
         "partyType": StringAttribute, //
         "nameSequenceDisplayAs": StringAttribute, //
-        "electronicLocationId": StringAttribute, //
+        "electronicLocationId": UUIDAttribute, //
         "allowRehire": StringAttribute, //
-        "relationship_PersonRelationshipId": StringAttribute, //
-        "relationship_LanguageRelationshipId": StringAttribute, //
-        "relationship_EthnicOriginRelationshipId": StringAttribute, //
+        "relationship_PersonRelationshipId": UUIDAttribute, //
+        "relationship_LanguageRelationshipId": UUIDAttribute, //
+        "relationship_EthnicOriginRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_workers.base");
   }

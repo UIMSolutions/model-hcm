@@ -7,7 +7,7 @@ class DHcmTotalCompStatementSectionTaxEntity : DOOPEntity {
   mixin(EntityThis!("HcmTotalCompStatementSectionTaxEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -15,15 +15,15 @@ class DHcmTotalCompStatementSectionTaxEntity : DOOPEntity {
         "taxCode": StringAttribute, //
         "taxCodeGroupType": StringAttribute, //
         "taxGroup": StringAttribute, //
-        "statementSectionId": StringAttribute, //
-        "taxCodeId": StringAttribute, //
-        "nullableTaxCodeId": StringAttribute, //
-        "countryRegionId": StringAttribute, //
-        "nullableCountryRegionId": StringAttribute, //
-        "taxGroupId": StringAttribute, //
-        "nullableTaxGroupId": StringAttribute, //
-        "relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": StringAttribute, //
-        "backingTable_HcmTotalCompStatementSectionTaxRelationshipId": StringAttribute, //      
+        "statementSectionId": UUIDAttribute, //
+        "taxCodeId": UUIDAttribute, //
+        "nullableTaxCodeId": UUIDAttribute, //
+        "countryRegionId": UUIDAttribute, //
+        "nullableCountryRegionId": UUIDAttribute, //
+        "taxGroupId": UUIDAttribute, //
+        "nullableTaxGroupId": UUIDAttribute, //
+        "relationship_HcmTotalCompStatementSectionHeaderEntityRelationshipId": UUIDAttribute, //
+        "backingTable_HcmTotalCompStatementSectionTaxRelationshipId": UUIDAttribute, //      
       ])
       .registerPath("hcm_totalcomps.statementsectiontax");
   }

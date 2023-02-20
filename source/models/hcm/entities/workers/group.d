@@ -7,14 +7,14 @@ class DHcmWorkerGroupEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerGroupEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, //
-        "employeeGroupId": StringAttribute, //
-        "backingTable_HcmWorkerGroup_RURelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "employeeGroupId": UUIDAttribute, //
+        "backingTable_HcmWorkerGroup_RURelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_workers.groups");
   }

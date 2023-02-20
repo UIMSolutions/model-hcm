@@ -7,7 +7,7 @@ class DHcmWorkerPostalAddressEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerPostalAddressEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -19,13 +19,13 @@ class DHcmWorkerPostalAddressEntity : DOOPEntity {
         "addressBuilding": StringAttribute, //
         "addressCity": StringAttribute, //
         "addressCityInKana": StringAttribute, //
-        "addressCountryRegionId": StringAttribute, //
+        "addressCountryRegionId": UUIDAttribute, //
         "addressCountryRegionISOCode": StringAttribute, //
-        "addressCountyId": StringAttribute, //
+        "addressCountyId": UUIDAttribute, //
         "addressDescription": StringAttribute, //
         "addressDistrictName": StringAttribute, //
         "addressLatitude": StringAttribute, //
-        "addressLocationId": StringAttribute, //
+        "addressLocationId": UUIDAttribute, //
         "addressLongitude": StringAttribute, //
         "addressPostBox": StringAttribute, //
         "addressState": StringAttribute, //
@@ -48,8 +48,8 @@ class DHcmWorkerPostalAddressEntity : DOOPEntity {
         "isRoleInvoice": StringAttribute, //
         "effective": StringAttribute, //
         "expiration": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
-        "backingTable_DirPartyLocationPostalAddressV2EntityRelationshipId": StringAttribute, ///HcmWorkerPostalAddressV2Entity
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
+        "backingTable_DirPartyLocationPostalAddressV2EntityRelationshipId": UUIDAttribute, ///HcmWorkerPostalAddressV2Entity
       ])
       .registerPath("hcm_workers.postaladdresses");
   }

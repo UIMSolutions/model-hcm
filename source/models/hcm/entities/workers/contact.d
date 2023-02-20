@@ -7,7 +7,7 @@ class DHcmWorkerContactEntity : DOOPEntity {
   mixin(EntityThis!("HcmWorkerContactEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -21,10 +21,10 @@ class DHcmWorkerContactEntity : DOOPEntity {
         "isPrimary": StringAttribute,
         "isMobilePhone": StringAttribute,
         "isPrivate": StringAttribute,
-        "locationId": StringAttribute,
+        "locationId": UUIDAttribute,
         "partyNumber": StringAttribute,
-        "relationship_HcmWorkerRelationshipId": StringAttribute,
-        "backingTable_DirPartyContactEntityRelationshipId": StringAttribute,
+        "relationship_HcmWorkerRelationshipId": UUIDAttribute,
+        "backingTable_DirPartyContactEntityRelationshipId": UUIDAttribute,
       ])
       .registerPath("hcm_workers.contacts");
   }
