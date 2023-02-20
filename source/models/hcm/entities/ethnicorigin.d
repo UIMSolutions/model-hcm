@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmEthnicOriginEntity : DOOPEntity {
   mixin(EntityThis!("HcmEthnicOriginEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

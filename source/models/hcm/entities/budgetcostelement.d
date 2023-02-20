@@ -6,7 +6,7 @@ import models.hcm;
 class DHcmBudgetCostElementEntity : DOOPEntity {
   mixin(EntityThis!("HcmBudgetCostElementEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
