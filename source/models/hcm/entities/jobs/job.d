@@ -7,37 +7,37 @@ class DHcmJobEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "jobId": StringAttribute, //
+        "jobId": UUIDAttribute, //
         "maximumNumberOfPositions": StringAttribute, //
         "compensationLevel": StringAttribute, //
-        "compensationLevelId": StringAttribute, //
+        "compensationLevelId": UUIDAttribute, //
         "fullTimeEquivalent": StringAttribute, //
         "description": StringAttribute, //
         "compensationReferenceJob": StringAttribute, //
         "function": StringAttribute, //
-        "functionId": StringAttribute, //
+        "functionId": UUIDAttribute, //
         "jobType": StringAttribute, //
-        "jobTypeId": StringAttribute, //
+        "jobTypeId": UUIDAttribute, //
         "marketPriceControlPoint": StringAttribute, //
         "marketPriceHighThreshold": StringAttribute, //
         "marketPriceLowThreshold": StringAttribute, //
         "marketPriceSource": StringAttribute, //
         "jobDescription": StringAttribute, //
         "compensationSurveyCompany": StringAttribute, //
-        "compensationSurveyCompanyId": StringAttribute, //
+        "compensationSurveyCompanyId": UUIDAttribute, //
         "title": StringAttribute, //
-        "titleId": StringAttribute, //
+        "titleId": UUIDAttribute, //
         "effective": StringAttribute, //
         "expiration": StringAttribute, //
         "allowUnlimitedPositions": StringAttribute, //
         "paidHourly": StringAttribute, //
-        "relationship_TitleRelationshipId": StringAttribute, //
-        "relationship_JobTypeRelationshipId": StringAttribute, //
-        "relationship_JobFunctionRelationshipId": StringAttribute, //
+        "relationship_TitleRelationshipId": UUIDAttribute, //
+        "relationship_JobTypeRelationshipId": UUIDAttribute, //
+        "relationship_JobFunctionRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_jobs");
   }

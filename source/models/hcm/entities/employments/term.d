@@ -7,19 +7,19 @@ class DHcmEmploymentTermEntity : DOOPEntity {
   mixin(EntityThis!("HcmEmploymentTermEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "agreementTermId": StringAttribute, //
-        "legalEntityId": StringAttribute, //
+        "agreementTermId": UUIDAttribute, //
+        "legalEntityId": UUIDAttribute, //
         "personnelNumber": StringAttribute, //
         "employmentStartDate": StringAttribute, //
         "employmentEndDate": StringAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
         "employment": StringAttribute, //
-        "relationship_EmploymentRelationshipId": StringAttribute, //
+        "relationship_EmploymentRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_employment.terms");
   }

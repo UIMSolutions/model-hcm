@@ -7,7 +7,7 @@ class DHcmEmploymentContractorEntity : DOOPEntity {
   mixin(EntityThis!("HcmEmploymentContractorEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -16,7 +16,7 @@ class DHcmEmploymentContractorEntity : DOOPEntity {
         "purchReqTable": StringAttribute, //
         "startDate": StringAttribute, //
         "endDate": StringAttribute, //
-        "vendorLegalEntityId": StringAttribute, //
+        "vendorLegalEntityId": UUIDAttribute, //
         "vendorAccountNumber": StringAttribute, //
         "vendorDataAreaID": StringAttribute, //
         "vendorID": StringAttribute, //
@@ -26,12 +26,12 @@ class DHcmEmploymentContractorEntity : DOOPEntity {
         "employmentEndDate": StringAttribute, //
         "worker": StringAttribute, //
         "personnelNumber": StringAttribute, //
-        "purchaseRequisitionId": StringAttribute, //
-        "employmentLegalEntityId": StringAttribute, //
-        "relationship_HcmEmploymentRelationshipId": StringAttribute, //
-        "relationship_PurchPurchaseOrderHeaderV2EntityRelationshipId": StringAttribute, //
-        "relationship_VendVendorV2EntityRelationshipId": StringAttribute, //
-        "backingTable_HcmEmploymentContractorRelationshipId": StringAttribute, //
+        "purchaseRequisitionId": UUIDAttribute, //
+        "employmentLegalEntityId": UUIDAttribute, //
+        "relationship_HcmEmploymentRelationshipId": UUIDAttribute, //
+        "relationship_PurchPurchaseOrderHeaderV2EntityRelationshipId": UUIDAttribute, //
+        "relationship_VendVendorV2EntityRelationshipId": UUIDAttribute, //
+        "backingTable_HcmEmploymentContractorRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_employment.contractors");
   }

@@ -7,34 +7,34 @@ class DHcmJobDetailEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobDetailEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "compensationLevel": StringAttribute, //
-        "compensationLevelId": StringAttribute, //
+        "compensationLevelId": UUIDAttribute, //
         "fullTimeEquivalent": StringAttribute, //
         "description": StringAttribute, //
         "compensationReferenceJob": StringAttribute, //
         "job": StringAttribute, //
-        "jobId": StringAttribute, //
+        "jobId": UUIDAttribute, //
         "function": StringAttribute, //
-        "functionId": StringAttribute, //
+        "functionId": UUIDAttribute, //
         "jobType": StringAttribute, //
-        "jobTypeId": StringAttribute, //
+        "jobTypeId": UUIDAttribute, //
         "marketPriceControlPoint": StringAttribute, //
         "marketPriceHighThreshold": StringAttribute, //
         "marketPriceLowThreshold": StringAttribute, //
         "marketPriceSource": StringAttribute, //
         "jobDescription": StringAttribute, //
         "compensationSurveyCompany": StringAttribute, //
-        "compensationSurveyCompanyId": StringAttribute, //
+        "compensationSurveyCompanyId": UUIDAttribute, //
         "title": StringAttribute, //
-        "titleId": StringAttribute, //
+        "titleId": UUIDAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
         "paidHourly": StringAttribute, //
-        "relationship_JobRelationshipId": StringAttribute, //
+        "relationship_JobRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_jobs.details");
   }

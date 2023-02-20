@@ -7,16 +7,16 @@ class DHcmJobPreferredCertificateEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobPreferredCertificateEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "certificateType": StringAttribute, //
-        "certificateTypeId": StringAttribute, //
+        "certificateTypeId": UUIDAttribute, //
         "importance": StringAttribute, //
         "job": StringAttribute, //
-        "jobId": StringAttribute, //
-        "relationship_JobRelationshipId": StringAttribute, //
+        "jobId": UUIDAttribute, //
+        "relationship_JobRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_jobs.preferredcertificates");
   }

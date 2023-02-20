@@ -7,7 +7,7 @@ class DHcmEmploymentEmployeeEntity : DOOPEntity {
   mixin(EntityThis!("HcmEmploymentEmployeeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -16,9 +16,9 @@ class DHcmEmploymentEmployeeEntity : DOOPEntity {
         "validTo": StringAttribute, //
         "employmentStartDate": StringAttribute, //
         "employmentEndDate": StringAttribute, //
-        "legalEntityId": StringAttribute, //
+        "legalEntityId": UUIDAttribute, //
         "personnelNumber": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
     ])
     .registerPath("hcm_employment.employees");
   }

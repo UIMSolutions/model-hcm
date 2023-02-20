@@ -7,11 +7,11 @@ class DHcmJobBaseEntity : DOOPEntity {
   mixin(EntityThis!("HcmJobBaseEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "jobId": StringAttribute, //
+        "jobId": UUIDAttribute, //
         "maximumNumberOfPositions": StringAttribute, //
         "allowUnlimitedPositions": StringAttribute, //
     ])
