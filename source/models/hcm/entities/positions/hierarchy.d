@@ -7,7 +7,7 @@ class DHcmPositionHierarchyEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionHierarchyEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -16,13 +16,13 @@ class DHcmPositionHierarchyEntity : DOOPEntity {
         "positionHierarchyType": StringAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
-        "positionId": StringAttribute, //
-        "parentPositionId": StringAttribute, //
+        "positionId": UUIDAttribute, //
+        "parentPositionId": UUIDAttribute, //
         "hierarchyType": StringAttribute, //
         "hierarchyTypeName": StringAttribute, //
-        "relationship_PositionRelationshipId": StringAttribute, //
-        "relationship_ParentPositionRelationshipId": StringAttribute, //
-        "relationship_PositionHierarchyTypeRelationshipId": StringAttribute, //      
+        "relationship_PositionRelationshipId": UUIDAttribute, //
+        "relationship_ParentPositionRelationshipId": UUIDAttribute, //
+        "relationship_PositionHierarchyTypeRelationshipId": UUIDAttribute, //      
       ])
       .registerPath("hcm_employment.hierarchies");
   }

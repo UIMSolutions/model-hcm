@@ -7,32 +7,32 @@ class DHcmPositionDetailEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionDetailEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "availableForAssignment": StringAttribute, //
         "compensationRegion": StringAttribute, //
-        "compensationRegionId": StringAttribute, //
+        "compensationRegionId": UUIDAttribute, //
         "department": StringAttribute, //
         "departmentNumber": StringAttribute, //
         "description": StringAttribute, //
         "fullTimeEquivalent": StringAttribute, //
         "job": StringAttribute, //
-        "jobId": StringAttribute, //
+        "jobId": UUIDAttribute, //
         "position": StringAttribute, //
-        "positionId": StringAttribute, //
+        "positionId": UUIDAttribute, //
         "positionType": StringAttribute, //
-        "positionTypeId": StringAttribute, //
+        "positionTypeId": UUIDAttribute, //
         "title": StringAttribute, //
-        "titleId": StringAttribute, //
+        "titleId": UUIDAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
-        "relationship_PositionRelationshipId": StringAttribute, //
-        "relationship_JobRelationshipId": StringAttribute, //
-        "relationship_PositionTypeRelationshipId": StringAttribute, //
-        "relationship_TitleRelationshipId": StringAttribute, //
-        "relationship_DepartmentRelationshipId": StringAttribute, //
+        "relationship_PositionRelationshipId": UUIDAttribute, //
+        "relationship_JobRelationshipId": UUIDAttribute, //
+        "relationship_PositionTypeRelationshipId": UUIDAttribute, //
+        "relationship_TitleRelationshipId": UUIDAttribute, //
+        "relationship_DepartmentRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.positions");
   }

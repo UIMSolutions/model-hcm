@@ -7,7 +7,7 @@ class DHcmPositionDefaultDimensionEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionDefaultDimensionEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -16,14 +16,14 @@ class DHcmPositionDefaultDimensionEntity : DOOPEntity {
         "legalEntity": StringAttribute, //
         "position": StringAttribute, //
         "legalEntityDataArea": StringAttribute, //
-        "distributionTemplateId": StringAttribute, //
+        "distributionTemplateId": UUIDAttribute, //
         "templateLegalEntity": StringAttribute, //
-        "templateLegalEntityId": StringAttribute, //
-        "positionId": StringAttribute, //
+        "templateLegalEntityId": UUIDAttribute, //
+        "positionId": UUIDAttribute, //
         "dimensionDisplayValue": StringAttribute, //
-        "relationship_DimensionDimensionSetRelationshipId": StringAttribute, //
-        "relationship_PositionRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "relationship_DimensionDimensionSetRelationshipId": UUIDAttribute, //
+        "relationship_PositionRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.defaultdimensions");
   }

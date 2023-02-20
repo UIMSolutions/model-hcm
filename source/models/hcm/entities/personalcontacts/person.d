@@ -7,7 +7,7 @@ class DHcmPersonalContactPersonEntity : DOOPEntity {
   mixin(EntityThis!("HcmPersonalContactPersonEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -34,9 +34,9 @@ class DHcmPersonalContactPersonEntity : DOOPEntity {
         "contactPartyType": StringAttribute, //
         "dependentPersonalContactRelationship": StringAttribute, //
         "emergencyContactPersonalContactRelationship": StringAttribute, //
-        "relationship_WorkerRelationshipId": StringAttribute, //
-        "relationship_RelationshipTypeRelationshipId": StringAttribute, //
-        "backingTable_DirPersonBaseEntityRelationshipId": StringAttribute, //
+        "relationship_WorkerRelationshipId": UUIDAttribute, //
+        "relationship_RelationshipTypeRelationshipId": UUIDAttribute, //
+        "backingTable_DirPersonBaseEntityRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_personalcontacts.persons");
   }

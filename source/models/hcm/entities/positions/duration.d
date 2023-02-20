@@ -7,15 +7,15 @@ class DHcmPositionDurationEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionDurationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "position": StringAttribute, //
-        "positionId": StringAttribute, //
+        "positionId": UUIDAttribute, //
         "validFrom": StringAttribute, //
         "validTo": StringAttribute, //
-        "relationship_PositionRelationshipId": StringAttribute, //
+        "relationship_PositionRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.durations");
   }

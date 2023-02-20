@@ -7,7 +7,7 @@ class DHcmPositionForecastEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionForecastEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -21,50 +21,50 @@ class DHcmPositionForecastEntity : DOOPEntity {
         "percent": StringAttribute, //
         "costElementSource": StringAttribute, //
         "costElementLineCompensationGrid": StringAttribute, //
-        "costElementRecId": StringAttribute, //
+        "costElementRecId": UUIDAttribute, //
         "costElementEffectiveDate": StringAttribute, //
         "costElementExpirationDate": StringAttribute, //
         "costElementLegalEntity": StringAttribute, //
         "costElementName": StringAttribute, //
-        "costElementDataAreaId": StringAttribute, //
+        "costElementDataAreaId": UUIDAttribute, //
         "forecastPositionActivationDate": StringAttribute, //
         "anniversaryDate": StringAttribute, //
-        "forecastPositionCompensationGroupDataAreaId": StringAttribute, //
-        "forecastPositionCompensationGroupId": StringAttribute, //
+        "forecastPositionCompensationGroupDataAreaId": UUIDAttribute, //
+        "forecastPositionCompensationGroupId": UUIDAttribute, //
         "forecastScenario": StringAttribute, //
         "forecastPositionFullTimeEquivalency": StringAttribute, //
         "forecastPositionPositionLegalEntity": StringAttribute, //
         "forecastPosition": StringAttribute, //
-        "forecastPdsitionCompensationLevelRecId": StringAttribute, //
+        "forecastPdsitionCompensationLevelRecId": UUIDAttribute, //
         "forecastPositionRetirementDate": StringAttribute, //
         "assignedWorker": StringAttribute, //
         "budgetPlanningProcess": StringAttribute, //
         "budgetPlanScenario": StringAttribute, //
         "budgetPlanScenarioName": StringAttribute, //
-        "forecastPositionRecId": StringAttribute, //
-        "forecastPositionId": StringAttribute, //
+        "forecastPositionRecId": UUIDAttribute, //
+        "forecastPositionId": UUIDAttribute, //
         "forecastPositionLegalEnitytName": StringAttribute, //
-        "costElementLineReferencePointId": StringAttribute, //
-        "costElementLineReferenceSetupId": StringAttribute, //
+        "costElementLineReferencePointId": UUIDAttribute, //
+        "costElementLineReferenceSetupId": UUIDAttribute, //
         "costElementLineMainAccountDisplayValue": StringAttribute, //
         "forecastPositionCompensationGrid": StringAttribute, //
         "budgetPlanningProcessName": StringAttribute, //
-        "forecastPositionRefPointId": StringAttribute, //
-        "forecastPositionRefPointSetupId": StringAttribute, //
+        "forecastPositionRefPointId": UUIDAttribute, //
+        "forecastPositionRefPointSetupId": UUIDAttribute, //
         "department": StringAttribute, //
         "description": StringAttribute, //
         "job": StringAttribute, //
         "positionType": StringAttribute, //
         "title": StringAttribute, //
         "compLocation": StringAttribute, //
-        "jobId": StringAttribute, //
+        "jobId": UUIDAttribute, //
         "departmentNumber": StringAttribute, //
-        "compensationRegionId": StringAttribute, //
-        "positionTypeId": StringAttribute, //
-        "titleId": StringAttribute, //
-        "compensationLevelId": StringAttribute, //
-        "relationship_MainAccountCombinationsRelationshipId": StringAttribute, //
-        "backingTable_HcmPositionForecastBudgetAcctLineRelationshipId": StringAttribute, //
+        "compensationRegionId": UUIDAttribute, //
+        "positionTypeId": UUIDAttribute, //
+        "titleId": UUIDAttribute, //
+        "compensationLevelId": UUIDAttribute, //
+        "relationship_MainAccountCombinationsRelationshipId": UUIDAttribute, //
+        "backingTable_HcmPositionForecastBudgetAcctLineRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.forecasts");
   }

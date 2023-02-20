@@ -7,12 +7,12 @@ class DPayrollBankAccountDisbursementEntity : DOOPEntity {
   mixin(EntityThis!("PayrollBankAccountDisbursementEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "description": StringAttribute, //
-        "payCycleId": StringAttribute, //
+        "payCycleId": UUIDAttribute, //
         "payCycleFrequency": StringAttribute, //
       ])
       .registerPath("hcm_payrolls.paycycles");

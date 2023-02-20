@@ -7,11 +7,11 @@ class DHcmPositionBaseEntity : DOOPEntity {
   mixin(EntityThis!("HcmPositionBaseEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "positionId": StringAttribute, //
+        "positionId": UUIDAttribute, //
       ])
       .registerPath("hcm_employment.bases");
   }

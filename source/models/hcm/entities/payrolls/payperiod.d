@@ -7,7 +7,7 @@ class DPayrollPayPeriodEntity : DOOPEntity {
   mixin(EntityThis!("PayrollPayPeriodEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -17,8 +17,8 @@ class DPayrollPayPeriodEntity : DOOPEntity {
         "periodEndDate": StringAttribute, //
         "periodStartDate": StringAttribute, //
         "status": StringAttribute, //
-        "payCycleId": StringAttribute, //
-        "relationship_PayCycleRelationshipId": StringAttribute, //
+        "payCycleId": UUIDAttribute, //
+        "relationship_PayCycleRelationshipId": UUIDAttribute, //
       ])
       .registerPath("hcm_payrolls.payperiods");
   }
