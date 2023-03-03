@@ -20,7 +20,7 @@ class DHcmPositionEntity : DEntity {
         "availableForAssignment": StringAttribute, //
         "compensationRegion": StringAttribute, //
         "department": StringAttribute, //
-        "description": StringAttribute, //
+        
         "fullTimeEquivalent": StringAttribute, //
         "job": StringAttribute, //
         "positionType": StringAttribute, //

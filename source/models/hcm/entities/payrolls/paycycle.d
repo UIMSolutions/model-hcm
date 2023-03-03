@@ -16,7 +16,7 @@ class DPayrollBankAccountDisbursementEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "payCycleId": UUIDAttribute, //
         "payCycleFrequency": StringAttribute, //
       ])

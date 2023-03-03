@@ -57,7 +57,7 @@ class DHcmPositionForecastEntity : DEntity {
         "forecastPositionRefPointId": UUIDAttribute, //
         "forecastPositionRefPointSetupId": UUIDAttribute, //
         "department": StringAttribute, //
-        "description": StringAttribute, //
+        
         "job": StringAttribute, //
         "positionType": StringAttribute, //
         "title": StringAttribute, //

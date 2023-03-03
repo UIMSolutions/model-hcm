@@ -21,7 +21,7 @@ class DHcmJobEntity : DEntity {
         "compensationLevel": StringAttribute, //
         "compensationLevelId": UUIDAttribute, //
         "fullTimeEquivalent": StringAttribute, //
-        "description": StringAttribute, //
+        
         "compensationReferenceJob": StringAttribute, //
         "function": StringAttribute, //
         "functionId": UUIDAttribute, //

@@ -16,7 +16,7 @@ class DHcmJobFunctionEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "jobFunctionId": UUIDAttribute, //
     ])
     .registerPath("hcm_jobs.functions");

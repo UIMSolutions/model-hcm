@@ -17,7 +17,7 @@ class DHcmLaborUnionAgreementEntity : DEntity {
     this
       .addValues([
         "agreementName": StringAttribute, //
-        "description": StringAttribute, //
+        
         "laborUnion": StringAttribute, //
         "unionId": UUIDAttribute, //
         "legalEntity": StringAttribute, //

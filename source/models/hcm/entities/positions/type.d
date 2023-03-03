@@ -16,7 +16,7 @@ class DHcmPositionTypeEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "classification": StringAttribute, //
         "positionTypeId": UUIDAttribute, //
       ])

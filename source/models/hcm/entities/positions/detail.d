@@ -21,7 +21,7 @@ class DHcmPositionDetailEntity : DEntity {
         "compensationRegionId": UUIDAttribute, //
         "department": StringAttribute, //
         "departmentNumber": StringAttribute, //
-        "description": StringAttribute, //
+        
         "fullTimeEquivalent": StringAttribute, //
         "job": StringAttribute, //
         "jobId": UUIDAttribute, //
