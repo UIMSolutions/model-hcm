@@ -3,7 +3,7 @@ module models.hcm.entities.jobs.preferredcertificate;
 @safe:
 import models.hcm;
 
-class DHcmJobPreferredCertificateEntity : DOOPEntity {
+class DHcmJobPreferredCertificateEntity : DEntity {
   mixin(EntityThis!("HcmJobPreferredCertificateEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

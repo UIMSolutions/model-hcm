@@ -3,7 +3,7 @@ module models.hcm.entities.jobs.function_;
 @safe:
 import models.hcm;
 
-class DHcmJobFunctionEntity : DOOPEntity {
+class DHcmJobFunctionEntity : DEntity {
   mixin(EntityThis!("HcmJobFunctionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
