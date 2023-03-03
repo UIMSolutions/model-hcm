@@ -43,8 +43,7 @@ class DHcmPersonalContactPersonEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmPersonalContactPersonEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmPersonalContactPersonEntity);
   
     auto entity = HcmPersonalContactPersonEntity;

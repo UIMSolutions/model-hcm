@@ -30,8 +30,7 @@ class DHcmPositionDefaultDimensionEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmPositionDefaultDimensionEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmPositionDefaultDimensionEntity);
   
     auto entity = HcmPositionDefaultDimensionEntity;

@@ -20,8 +20,7 @@ class DPayrollBankAccountDisbursementEntity : DOOPEntity {
 }
 mixin(EntityCalls!("PayrollBankAccountDisbursementEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(PayrollBankAccountDisbursementEntity);
   
     auto entity = PayrollBankAccountDisbursementEntity;

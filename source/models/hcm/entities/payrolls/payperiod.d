@@ -25,8 +25,7 @@ class DPayrollPayPeriodEntity : DOOPEntity {
 }
 mixin(EntityCalls!("PayrollPayPeriodEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(PayrollPayPeriodEntity);
   
     auto entity = PayrollPayPeriodEntity;

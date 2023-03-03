@@ -22,8 +22,7 @@ class DHcmPositionDurationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmPositionDurationEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmPositionDurationEntity);
   
     auto entity = HcmPositionDurationEntity;

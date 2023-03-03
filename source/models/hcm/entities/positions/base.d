@@ -18,8 +18,7 @@ class DHcmPositionBaseEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmPositionBaseEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmPositionEntity);
   
     auto entity = HcmPositionEntity;
