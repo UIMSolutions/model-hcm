@@ -3,7 +3,7 @@ module models.hcm.entities.personalcontacts.organization;
 @safe:
 import models.hcm;
 
-class DHcmPersonalContactOrganizationEntity : DOOPEntity {
+class DHcmPersonalContactOrganizationEntity : DEntity {
   mixin(EntityThis!("HcmPersonalContactOrganizationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

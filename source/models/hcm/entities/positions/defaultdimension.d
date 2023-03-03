@@ -3,7 +3,7 @@ module models.hcm.entities.positions.defaultdimension;
 @safe:
 import models.hcm;
 
-class DHcmPositionDefaultDimensionEntity : DOOPEntity {
+class DHcmPositionDefaultDimensionEntity : DEntity {
   mixin(EntityThis!("HcmPositionDefaultDimensionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

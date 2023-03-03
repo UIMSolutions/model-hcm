@@ -3,7 +3,7 @@ module models.hcm.entities.payrolls.payperiod;
 @safe:
 import models.hcm;
 
-class DPayrollPayPeriodEntity : DOOPEntity {
+class DPayrollPayPeriodEntity : DEntity {
   mixin(EntityThis!("PayrollPayPeriodEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

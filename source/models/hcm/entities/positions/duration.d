@@ -3,7 +3,7 @@ module models.hcm.entities.positions.duration;
 @safe:
 import models.hcm;
 
-class DHcmPositionDurationEntity : DOOPEntity {
+class DHcmPositionDurationEntity : DEntity {
   mixin(EntityThis!("HcmPositionDurationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
