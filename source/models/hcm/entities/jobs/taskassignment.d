@@ -24,8 +24,7 @@ class DHcmJobTaskAssignmentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmJobTaskAssignmentEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmJobTaskAssignmentEntity);
   
     auto entity = HcmJobTaskAssignmentEntity;

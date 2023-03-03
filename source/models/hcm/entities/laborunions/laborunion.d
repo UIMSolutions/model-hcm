@@ -24,8 +24,7 @@ class DHcmLaborUnionAgreementEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmLaborUnionAgreementEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmLaborUnionAgreementEntity);
   
     auto entity = HcmLaborUnionAgreementEntity;

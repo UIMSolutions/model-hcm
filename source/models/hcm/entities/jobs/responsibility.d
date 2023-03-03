@@ -23,8 +23,7 @@ class DHcmJobResponsibilityEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmJobResponsibilityEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmJobResponsibilityEntity);
   
     auto entity = HcmJobResponsibilityEntity;
