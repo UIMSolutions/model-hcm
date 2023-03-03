@@ -27,8 +27,7 @@ class DKMAnswersByPersonEntity : DOOPEntity {
 }
 mixin(EntityCalls!("KMAnswersByPersonEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(KMAnswersByPersonEntity);
   
     auto entity = KMAnswersByPersonEntity;

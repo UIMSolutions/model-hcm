@@ -19,8 +19,7 @@ class DHcmEthnicOriginEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmEthnicOriginEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmEthnicOriginEntity);
   
     auto entity = HcmEthnicOriginEntity;

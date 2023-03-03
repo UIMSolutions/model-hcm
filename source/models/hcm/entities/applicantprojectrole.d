@@ -26,8 +26,7 @@ class DHcmApplicantProjectRoleEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmApplicantProjectRoleEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmApplicantProjectRoleEntity);
   
     auto entity = HcmApplicantProjectRoleEntity;

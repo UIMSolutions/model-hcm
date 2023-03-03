@@ -31,8 +31,7 @@ class DHcmBudgetCostElementEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmBudgetCostElementEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmBudgetCostElementEntity);
   
     auto entity = HcmBudgetCostElementEntity;

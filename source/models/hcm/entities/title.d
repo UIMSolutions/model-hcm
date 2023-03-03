@@ -18,8 +18,7 @@ class DHcmTitleEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmTitleEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmTitleEntity);
   
     auto entity = HcmTitleEntity;

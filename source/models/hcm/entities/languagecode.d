@@ -19,8 +19,7 @@ class DHcmLanguageCodeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmLanguageCodeEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmLanguageCodeEntity);
   
     auto entity = HcmLanguageCodeEntity;
