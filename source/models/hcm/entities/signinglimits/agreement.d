@@ -20,8 +20,7 @@ class DHcmSigningLimitAgreementEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmSigningLimitAgreementEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmSigningLimitAgreementEntity);
   
     auto entity = HcmSigningLimitAgreementEntity;

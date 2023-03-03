@@ -22,8 +22,7 @@ class DHcmSignLimitParametersEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmSignLimitParametersEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmSignLimitParametersEntity);
   
     auto entity = HcmSignLimitParametersEntity;

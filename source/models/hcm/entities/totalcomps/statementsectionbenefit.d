@@ -22,8 +22,7 @@ class DHcmTotalCompStatementSectionBenefitEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmTotalCompStatementSectionBenefitEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmTotalCompStatementSectionBenefitEntity);
   
     auto entity = HcmTotalCompStatementSectionBenefitEntity;

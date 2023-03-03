@@ -20,8 +20,7 @@ class DHcmPositionHierarchyTypeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmPositionHierarchyTypeEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmPositionHierarchyTypeEntity);
   
     auto entity = HcmPositionHierarchyTypeEntity;

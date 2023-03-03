@@ -19,8 +19,7 @@ class DHcmSigningLimitRevocationReasonCodeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmSigningLimitRevocationReasonCodeEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmSigningLimitAgreementEntity);
   
     auto entity = HcmSigningLimitAgreementEntity;

@@ -29,8 +29,7 @@ class DHcmPositionUnionAgreementEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmPositionUnionAgreementEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmPositionUnionAgreementEntity);
   
     auto entity = HcmPositionUnionAgreementEntity;
