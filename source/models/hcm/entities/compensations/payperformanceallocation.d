@@ -3,7 +3,7 @@ module models.hcm.entities.compensations.payperformanceallocation;
 @safe:
 import models.hcm;
 
-class DHcmCompensationPayPerformanceAllocationEntity : DOOPEntity {
+class DHcmCompensationPayPerformanceAllocationEntity : DEntity {
   mixin(EntityThis!("HcmCompensationPayPerformanceAllocationEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

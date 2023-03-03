@@ -3,7 +3,7 @@ module models.hcm.entities.bi.workertrend;
 @safe:
 import models.hcm;
 
-class DHcmBIPerformanceEntity : DOOPEntity {
+class DHcmBIPerformanceEntity : DEntity {
   mixin(EntityThis!("HcmBIPerformanceEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

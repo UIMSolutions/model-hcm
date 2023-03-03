@@ -3,7 +3,7 @@ module models.hcm.entities.bi.terminatedapplicant;
 @safe:
 import models.hcm;
 
-class DHcmBITerminatedApplicantEntity : DOOPEntity {
+class DHcmBITerminatedApplicantEntity : DEntity {
   mixin(EntityThis!("HcmBITerminatedApplicantEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

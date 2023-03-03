@@ -3,7 +3,7 @@ module models.hcm.entities.compensations.performancerating;
 @safe:
 import models.hcm;
 
-class DHcmCompensationPerformanceRatingEntity : DOOPEntity {
+class DHcmCompensationPerformanceRatingEntity : DEntity {
   mixin(EntityThis!("HcmCompensationPerformanceRatingEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
