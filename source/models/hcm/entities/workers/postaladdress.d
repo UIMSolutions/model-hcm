@@ -3,7 +3,7 @@ module models.hcm.entities.workers.postaladdress;
 @safe:
 import models.hcm;
 
-class DHcmWorkerPostalAddressEntity : DOOPEntity {
+class DHcmWorkerPostalAddressEntity : DEntity {
   mixin(EntityThis!("HcmWorkerPostalAddressEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.hcm.entities.workers.bankaccount;
 @safe:
 import models.hcm;
 
-class DHcmWorkerBankAccountEntity : DOOPEntity {
+class DHcmWorkerBankAccountEntity : DEntity {
   mixin(EntityThis!("HcmWorkerBankAccountEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
