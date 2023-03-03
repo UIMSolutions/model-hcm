@@ -16,7 +16,7 @@ class DHcmLanguageCodeEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "languageCodeId": UUIDAttribute, //
       ])
       .registerPath("hcm_languagecodes");

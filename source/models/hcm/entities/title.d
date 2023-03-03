@@ -26,5 +26,5 @@ mixin(EntityCalls!("HcmTitleEntity"));
 ///
 unittest {
   auto entity = new DHcmTitleEntity;
-  assert(entity.name == "HcmTitleEntity");  
+  assert(entity.className == "HcmTitleEntity");  
 }

@@ -33,5 +33,5 @@ mixin(EntityCalls!("HcmApplicantProjectRoleEntity"));
 
 unittest {
   auto entity = new DHcmApplicantProjectRoleEntity;
-  assert(entity.name == "HcmApplicantProjectRoleEntity");
+  assert(entity.className == "HcmApplicantProjectRoleEntity");
 }

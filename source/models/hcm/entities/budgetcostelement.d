@@ -17,7 +17,7 @@ class DHcmBudgetCostElementEntity : DEntity {
     this
       .addValues([
         "budgetCostType": StringAttribute, //
-        "description": StringAttribute, //
+        
         "torecastPositionOverride": StringAttribute, //
         "allocationMethod": StringAttribute, //
         "percent": StringAttribute, //
@@ -38,5 +38,5 @@ mixin(EntityCalls!("HcmBudgetCostElementEntity"));
 
 unittest {
   auto entity = HcmBudgetCostElementEntity;
-  assert(entity.name == "HcmBudgetCostElementEntity");  
+  assert(entity.className == "HcmBudgetCostElementEntity");  
 }

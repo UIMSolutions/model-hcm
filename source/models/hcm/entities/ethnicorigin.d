@@ -16,7 +16,7 @@ class DHcmEthnicOriginEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, // 
+         
         "ethnicOriginId": UUIDAttribute, // 
       ])
       .registerPath("hcm_ethnicorigins");
@@ -24,9 +24,15 @@ class DHcmEthnicOriginEntity : DEntity {
 }
 mixin(EntityCalls!("HcmEthnicOriginEntity"));
 
-version(test_model_hcm) { unittest {
-    assert(HcmEthnicOriginEntity);
-  
-    auto entity = HcmEthnicOriginEntity;
-  }
+///
+unittest {
+  auto entity = new DHcmEthnicOriginEntity;
+  assert(entity.className == "HcmEthnicOriginEntity");
+
+  entity.description("aDescription");
+  assert(entity["description"] == "aDescription");
+
+  UUID id = randomUUID;
+  entity.ethnicOriginId(id);
+  assert(entity["ethnicOriginId"] == id.toString);
 }

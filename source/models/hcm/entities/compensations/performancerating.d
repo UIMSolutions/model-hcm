@@ -16,7 +16,7 @@ class DHcmCompensationPerformanceRatingEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "rating": StringAttribute, //
         "effective": StringAttribute, //
         "expiration": StringAttribute, //

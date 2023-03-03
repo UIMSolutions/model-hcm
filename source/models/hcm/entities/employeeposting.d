@@ -33,9 +33,7 @@ class DHcmEmployeePostingEntity : DEntity {
 }
 mixin(EntityCalls!("HcmEmployeePostingEntity"));
 
-version(test_model_hcm) { unittest {
-    assert(HcmEmployeePostingEntity);
-  
-    auto entity = HcmEmployeePostingEntity;
-  }
+unittest {
+  auto entity = new DHcmEmployeePostingEntity;
+  assert(entity.className == "HcmEmployeePostingEntity");
 }
