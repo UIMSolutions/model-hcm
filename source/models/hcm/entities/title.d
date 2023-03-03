@@ -3,7 +3,7 @@ module models.hcm.entities.title;
 @safe:
 import models.hcm;
 
-class DHcmTitleEntity : DOOPEntity {
+class DHcmTitleEntity : DEntity {
   mixin(EntityThis!("HcmTitleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

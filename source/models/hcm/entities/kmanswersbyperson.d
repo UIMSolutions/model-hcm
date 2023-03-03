@@ -3,7 +3,7 @@ module models.hcm.entities.kmanswersbyperson;
 @safe:
 import models.hcm;
 
-class DKMAnswersByPersonEntity : DOOPEntity {
+class DKMAnswersByPersonEntity : DEntity {
   mixin(EntityThis!("KMAnswersByPersonEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

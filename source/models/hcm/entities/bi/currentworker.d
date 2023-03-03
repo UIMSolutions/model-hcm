@@ -3,7 +3,7 @@ module models.hcm.entities.bi.currentworker;
 @safe:
 import models.hcm;
 
-class DHcmBICurrentWorkerEntity : DOOPEntity {
+class DHcmBICurrentWorkerEntity : DEntity {
   mixin(EntityThis!("HcmBICurrentWorkerEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

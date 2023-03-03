@@ -3,7 +3,7 @@ module models.hcm.entities.languagecode;
 @safe:
 import models.hcm;
 
-class DHcmLanguageCodeEntity : DOOPEntity {
+class DHcmLanguageCodeEntity : DEntity {
   mixin(EntityThis!("HcmLanguageCodeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

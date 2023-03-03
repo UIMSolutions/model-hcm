@@ -3,7 +3,7 @@ module models.hcm.entities.applicantprojectrole;
 @safe:
 import models.hcm;
 
-class DHcmApplicantProjectRoleEntity : DOOPEntity {
+class DHcmApplicantProjectRoleEntity : DEntity {
   mixin(EntityThis!("HcmApplicantProjectRoleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

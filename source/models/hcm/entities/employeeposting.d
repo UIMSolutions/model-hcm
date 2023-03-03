@@ -3,7 +3,7 @@ module models.hcm.entities.employeeposting;
 @safe:
 import models.hcm;
 
-class DHcmEmployeePostingEntity : DOOPEntity {
+class DHcmEmployeePostingEntity : DEntity {
   mixin(EntityThis!("HcmEmployeePostingEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

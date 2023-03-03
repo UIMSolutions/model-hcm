@@ -3,7 +3,7 @@ module models.hcm.entities.ethnicorigin;
 @safe:
 import models.hcm;
 
-class DHcmEthnicOriginEntity : DOOPEntity {
+class DHcmEthnicOriginEntity : DEntity {
   mixin(EntityThis!("HcmEthnicOriginEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

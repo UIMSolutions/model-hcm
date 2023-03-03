@@ -3,7 +3,7 @@ module models.hcm.entities.budgetcostelement;
 @safe:
 import models.hcm;
 
-class DHcmBudgetCostElementEntity : DOOPEntity {
+class DHcmBudgetCostElementEntity : DEntity {
   mixin(EntityThis!("HcmBudgetCostElementEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
