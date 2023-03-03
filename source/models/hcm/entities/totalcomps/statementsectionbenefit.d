@@ -3,7 +3,7 @@ module models.hcm.entities.totalcomps.statementsectionbenefit;
 @safe:
 import models.hcm;
 
-class DHcmTotalCompStatementSectionBenefitEntity : DOOPEntity {
+class DHcmTotalCompStatementSectionBenefitEntity : DEntity {
   mixin(EntityThis!("HcmTotalCompStatementSectionBenefitEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

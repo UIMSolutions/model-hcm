@@ -3,7 +3,7 @@ module models.hcm.entities.positions.workerassignment;
 @safe:
 import models.hcm;
 
-class DHcmPositionWorkerAssignmentEntity : DOOPEntity {
+class DHcmPositionWorkerAssignmentEntity : DEntity {
   mixin(EntityThis!("HcmPositionWorkerAssignmentEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.hcm.entities.signinglimits.agreement;
 @safe:
 import models.hcm;
 
-class DHcmSigningLimitAgreementEntity : DOOPEntity {
+class DHcmSigningLimitAgreementEntity : DEntity {
   mixin(EntityThis!("HcmSigningLimitAgreementEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

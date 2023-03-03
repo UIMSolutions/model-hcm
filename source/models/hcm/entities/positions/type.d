@@ -3,7 +3,7 @@ module models.hcm.entities.positions.type;
 @safe:
 import models.hcm;
 
-class DHcmPositionTypeEntity : DOOPEntity {
+class DHcmPositionTypeEntity : DEntity {
   mixin(EntityThis!("HcmPositionTypeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

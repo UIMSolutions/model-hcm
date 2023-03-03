@@ -3,7 +3,7 @@ module models.hcm.entities.positions.unionagreement;
 @safe:
 import models.hcm;
 
-class DHcmPositionUnionAgreementEntity : DOOPEntity {
+class DHcmPositionUnionAgreementEntity : DEntity {
   mixin(EntityThis!("HcmPositionUnionAgreementEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

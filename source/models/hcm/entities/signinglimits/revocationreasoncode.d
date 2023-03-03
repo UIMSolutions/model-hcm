@@ -3,7 +3,7 @@ module models.hcm.entities.signinglimits.revocationreasoncode;
 @safe:
 import models.hcm;
 
-class DHcmSigningLimitRevocationReasonCodeEntity : DOOPEntity {
+class DHcmSigningLimitRevocationReasonCodeEntity : DEntity {
   mixin(EntityThis!("HcmSigningLimitRevocationReasonCodeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
