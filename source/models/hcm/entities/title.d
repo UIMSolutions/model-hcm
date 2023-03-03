@@ -23,9 +23,8 @@ class DHcmTitleEntity : DEntity {
 }
 mixin(EntityCalls!("HcmTitleEntity"));
 
-version(test_model_hcm) { unittest {
-    assert(HcmTitleEntity);
-  
-    auto entity = HcmTitleEntity;
-  }
+///
+unittest {
+  auto entity = new DHcmTitleEntity;
+  assert(entity.name == "HcmTitleEntity");  
 }

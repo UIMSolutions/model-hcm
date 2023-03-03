@@ -31,9 +31,7 @@ class DHcmApplicantProjectRoleEntity : DEntity {
 }
 mixin(EntityCalls!("HcmApplicantProjectRoleEntity"));
 
-version(test_model_hcm) { unittest {
-    assert(HcmApplicantProjectRoleEntity);
-  
-    auto entity = HcmApplicantProjectRoleEntity;
-  }
+unittest {
+  auto entity = new DHcmApplicantProjectRoleEntity;
+  assert(entity.name == "HcmApplicantProjectRoleEntity");
 }

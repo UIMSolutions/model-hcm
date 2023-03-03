@@ -36,9 +36,7 @@ class DHcmBudgetCostElementEntity : DEntity {
 }
 mixin(EntityCalls!("HcmBudgetCostElementEntity"));
 
-version(test_model_hcm) { unittest {
-    assert(HcmBudgetCostElementEntity);
-  
-    auto entity = HcmBudgetCostElementEntity;
-  }
+unittest {
+  auto entity = HcmBudgetCostElementEntity;
+  assert(entity.name == "HcmBudgetCostElementEntity");  
 }

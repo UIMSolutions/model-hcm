@@ -5,22 +5,26 @@
 **********************************************************************************************************/
 module models.hcm.entities;
 
-public import models.hcm.entities.bi;
-public import models.hcm.entities.compensations;
-public import models.hcm.entities.employments;
-public import models.hcm.entities.jobs;
-public import models.hcm.entities.payrolls;
-public import models.hcm.entities.positions;
-public import models.hcm.entities.signinglimits;
-public import models.hcm.entities.totalcomps;
-public import models.hcm.entities.workers;
+public { // Packages
+	import models.hcm.entities.bi;
+	import models.hcm.entities.compensations;
+	import models.hcm.entities.employments;
+	import models.hcm.entities.jobs;
+	import models.hcm.entities.payrolls;
+	import models.hcm.entities.positions;
+	import models.hcm.entities.signinglimits;
+	import models.hcm.entities.totalcomps;
+	import models.hcm.entities.workers;
+}
 
-public import models.hcm.entities.applicantprojectrole;
-public import models.hcm.entities.budgetcostelement;
-public import models.hcm.entities.contractor;
-public import models.hcm.entities.employee;
-public import models.hcm.entities.employeeposting;
-public import models.hcm.entities.ethnicorigin;
-public import models.hcm.entities.kmanswersbyperson;
-public import models.hcm.entities.languagecode;
-public import models.hcm.entities.title;
+public { // Entities
+	import models.hcm.entities.applicantprojectrole;
+	import models.hcm.entities.budgetcostelement;
+	import models.hcm.entities.contractor;
+	import models.hcm.entities.employee;
+	import models.hcm.entities.employeeposting;
+	import models.hcm.entities.ethnicorigin;
+	import models.hcm.entities.kmanswersbyperson;
+	import models.hcm.entities.languagecode;
+	import models.hcm.entities.title;
+}

@@ -5,7 +5,9 @@
 **********************************************************************************************************/
 module models.hcm.entities.totalcomps;
 
-public import models.hcm.entities.totalcomps.statementsectionbenefit;
-public import models.hcm.entities.totalcomps.statementsectionearning;
-public import models.hcm.entities.totalcomps.statementsectionheader;
-public import models.hcm.entities.totalcomps.statementsectiontax;
+public {
+	import models.hcm.entities.totalcomps.statementsectionbenefit;
+	import models.hcm.entities.totalcomps.statementsectionearning;
+	import models.hcm.entities.totalcomps.statementsectionheader;
+	import models.hcm.entities.totalcomps.statementsectiontax;
+}
