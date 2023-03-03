@@ -25,8 +25,7 @@ class DHcmEmploymentEmployeeEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmEmploymentEmployeeEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmEmploymentEmployeeEntity);
   
     auto entity = HcmEmploymentEmployeeEntity;

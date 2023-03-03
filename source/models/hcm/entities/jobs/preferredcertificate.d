@@ -23,8 +23,7 @@ class DHcmJobPreferredCertificateEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmJobPreferredCertificateEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmJobPreferredCertificateEntity);
   
     auto entity = HcmJobPreferredCertificateEntity;
