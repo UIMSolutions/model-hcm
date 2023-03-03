@@ -56,8 +56,7 @@ class DHcmWorkerPostalAddressEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmWorkerPostalAddressEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmWorkerPostalAddressEntity);
   
     auto entity = HcmWorkerPostalAddressEntity;

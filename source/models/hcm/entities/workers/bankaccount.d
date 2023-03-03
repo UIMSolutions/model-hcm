@@ -56,8 +56,7 @@ class DHcmWorkerBankAccountEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmWorkerBankAccountEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmWorkerBankAccountEntity);
   
     auto entity = HcmWorkerBankAccountEntity;

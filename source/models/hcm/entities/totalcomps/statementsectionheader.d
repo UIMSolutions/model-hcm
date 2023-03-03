@@ -19,8 +19,7 @@ class DHcmTotalCompStatementSectionHeaderEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmTotalCompStatementSectionHeaderEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmTotalCompStatementSectionHeaderEntity);
   
     auto entity = HcmTotalCompStatementSectionHeaderEntity;
