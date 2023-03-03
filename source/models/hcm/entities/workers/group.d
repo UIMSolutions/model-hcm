@@ -16,7 +16,7 @@ class DHcmWorkerGroupEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "employeeGroupId": UUIDAttribute, //
         "backingTable_HcmWorkerGroup_RURelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //

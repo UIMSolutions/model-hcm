@@ -16,7 +16,7 @@ class DHcmSigningLimitRevocationReasonCodeEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "reasonCode": StringAttribute, //
       ])
       .registerPath("hcm_signinglimits.revocationreasoncode");

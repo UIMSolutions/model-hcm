@@ -16,7 +16,7 @@ class DHcmJobTaskEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "jobTaskId": UUIDAttribute, //
         "note": StringAttribute, //
       ])

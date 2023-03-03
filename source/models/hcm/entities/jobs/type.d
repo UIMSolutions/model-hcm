@@ -16,7 +16,7 @@ class DHcmJobTypeEntity : DEntity {
 
     this
       .addValues([
-        "description": StringAttribute, //
+        
         "exemptStatus": StringAttribute, //
         "jobTypeId": UUIDAttribute, //
         "paidHourly": StringAttribute, //
