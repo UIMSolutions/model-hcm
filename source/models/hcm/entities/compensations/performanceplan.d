@@ -23,8 +23,7 @@ class DHcmCompensationPerformancePlanEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmCompensationPerformancePlanEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmCompensationPerformancePlanEntity);
   
     auto entity = HcmCompensationPerformancePlanEntity;

@@ -40,8 +40,7 @@ class DHcmBIPerformanceEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmBIPerformanceEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmBIPerformanceEntity);
   
   auto entity = HcmBIPerformanceEntity;

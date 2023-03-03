@@ -62,8 +62,7 @@ class DHcmBIEmployedApplicantEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmBIEmployedApplicantEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmBIEmployedApplicantEntity);
   
   auto entity = HcmBIEmployedApplicantEntity;

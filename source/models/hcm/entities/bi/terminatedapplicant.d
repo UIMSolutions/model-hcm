@@ -50,8 +50,7 @@ class DHcmBITerminatedApplicantEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmBITerminatedApplicantEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmBITerminatedApplicantEntity);
   
     auto entity = HcmBITerminatedApplicantEntity;

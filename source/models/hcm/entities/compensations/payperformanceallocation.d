@@ -29,8 +29,7 @@ class DHcmCompensationPayPerformanceAllocationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("HcmCompensationPayPerformanceAllocationEntity"));
 
-version(test_model_hcm) {
-  unittest {
+version(test_model_hcm) { unittest {
     assert(HcmCompensationPayPerformanceAllocationEntity);
   
     auto entity = HcmCompensationPayPerformanceAllocationEntity;
