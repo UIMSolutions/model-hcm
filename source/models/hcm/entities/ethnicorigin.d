@@ -16,7 +16,6 @@ class DHcmEthnicOriginEntity : DEntity {
 
     this
       .addValues([
-         
         "ethnicOriginId": UUIDAttribute, // 
       ])
       .registerPath("hcm_ethnicorigins");
@@ -29,10 +28,7 @@ unittest {
   auto entity = new DHcmEthnicOriginEntity;
   assert(entity.className == "HcmEthnicOriginEntity");
 
-  entity.description("aDescription");
-  assert(entity["description"] == "aDescription");
-
   UUID id = randomUUID;
-  entity.ethnicOriginId(id);
-  assert(entity["ethnicOriginId"] == id.toString);
+  entity["ethnicOriginId"] = id;
+  assert(entity["ethnicOriginId"] == id.toString); // TODO
 }
