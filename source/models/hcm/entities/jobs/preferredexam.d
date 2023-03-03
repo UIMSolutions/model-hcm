@@ -3,7 +3,7 @@ module models.hcm.entities.jobs.preferredexam;
 @safe:
 import models.hcm;
 
-class DHcmJobPreferredExamEntity : DOOPEntity {
+class DHcmJobPreferredExamEntity : DEntity {
   mixin(EntityThis!("HcmJobPreferredExamEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

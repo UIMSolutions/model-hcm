@@ -3,7 +3,7 @@ module models.hcm.entities.laborunions.agreement;
 @safe:
 import models.hcm;
 
-class DHcmLaborUnionAgreementEntity : DOOPEntity {
+class DHcmLaborUnionAgreementEntity : DEntity {
   mixin(EntityThis!("HcmLaborUnionAgreementEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

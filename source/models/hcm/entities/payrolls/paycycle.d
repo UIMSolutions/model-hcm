@@ -3,7 +3,7 @@ module models.hcm.entities.payrolls.paycycle;
 @safe:
 import models.hcm;
 
-class DPayrollBankAccountDisbursementEntity : DOOPEntity {
+class DPayrollBankAccountDisbursementEntity : DEntity {
   mixin(EntityThis!("PayrollBankAccountDisbursementEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.hcm.entities.jobs.responsibility;
 @safe:
 import models.hcm;
 
-class DHcmJobResponsibilityEntity : DOOPEntity {
+class DHcmJobResponsibilityEntity : DEntity {
   mixin(EntityThis!("HcmJobResponsibilityEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
